@@ -1,0 +1,2 @@
+# SIT323 HD Code
+This project is a small Node.js API that is going to be turned into a Docker image and run on GCP after going through a CI/CD pipeline. There are a few endpoints but the main one is /random which will give the output of 1 of 10 random functions that can be seen in app.js. This could be more organised than it is, but was more of a fun little experiment than anything else.
