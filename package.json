@@ -1,4 +1,6 @@
 {
+  "name": "random-node-app",
+  "description": "Nodeapp for GCP CICD test",
   "dependencies": {
     "express": "^5.2.1"
   }

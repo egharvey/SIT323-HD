@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 8080;
 
 function Hello() {
     return "Hello";
@@ -180,7 +179,7 @@ app.post('/hello', (req, res) => {
     res.send("Hello " + name + "! I hope you are having a good day.");
 });
 
-app.listen(port, (error) => {
-    if (!error) console.log(`Example app listening at http://localhost:${port}`);
+app.listen(process.env.PORT || 3000, (error) => {
+    if (!error) console.log(`Example app listening at http://localhost:${process.env.PORT || 3000}`);
     else console.log("Error occurred, server can't start", error);
 }); 
